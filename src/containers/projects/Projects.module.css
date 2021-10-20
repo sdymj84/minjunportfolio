@@ -1,0 +1,30 @@
+
+.header_title {
+  position: absolute;
+  top: 150px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  flex-direction: column;
+}
+
+.header1 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+.avatar_image {
+  margin-right: 3rem;
+}
+.avatar_image img {
+  border-radius: 50%;
+}
+.header_inner_text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+

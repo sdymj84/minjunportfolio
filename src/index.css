@@ -1,3 +1,7 @@
+html, body {
+  height: 100%;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -11,3 +15,131 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+
+
+.page_container {
+  width: 100%;
+  background: rgb(233, 233, 233);
+  overflow: hidden;
+}
+
+.font1 {
+  font-size: 3rem;
+  color: #363685;
+}
+.font2 {
+  font-size: 2.4rem;
+  color: #363685;
+}
+.font3 {
+  font-size: 2rem;
+  color: white;
+}
+.font4 {
+  font-size: 1rem;
+  color: grey;
+}
+
+.wave_container {
+  width: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+.wave {
+  position: relative;
+  width: 100vw;
+  height: 100vw;
+  background: rgb(56,86,118);
+}
+.wave:before,
+.wave:after
+ {
+  content: '';
+  background: #000;
+  position: absolute;
+  width: 500%;
+  height: 500%;
+  top: calc(-410% - (100vw / 2));
+  left: -200%;
+  transform-origin: 50% 51%;
+  box-shadow: inset 0 0 50px rgba(56,86,118,.5);
+}
+
+
+@media (max-width: 1024px) {
+  .wave:before, .wave:after {
+    top: calc(-400% - (100vw / 2));
+  }
+}
+@media (max-width: 768px) {
+  .wave {
+    width: 150vw;
+    height: 150vw;
+  }
+  .wave:before, .wave:after {
+    top: calc(-410% - (100vw / 2));
+    left: -220%
+  }
+}
+@media (max-width: 480px) {
+  .wave {
+    width: 170vw;
+    height: 170vw;
+  }
+  .wave:before, .wave:after {
+    top: calc(-400% - (100vw / 2));
+    left: -230%;
+  }
+}
+.wave:before {
+  border-radius: 49%;
+  background: rgba(255,255,255,.9);
+  animation: animate 12s linear infinite;
+}
+.wave:after {
+  border-radius: 47%;
+  background: rgba(255,255,255,.5);
+  animation: animate 10s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} */

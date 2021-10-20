@@ -1,0 +1,28 @@
+.container {
+  width: 70%;
+  height: 50px;
+  background: white;
+  padding: 0 15%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+}
+
+.menu {
+  display: flex;
+  justify-content: flex-start;
+}
+.menu div {
+  margin-right: 30px;
+  cursor: pointer;
+}
+
+.social_contacts {
+  display: flex;
+}
+.social_contacts svg {
+  margin-right: 10px;
+  cursor: pointer;
+}

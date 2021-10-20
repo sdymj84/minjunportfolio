@@ -1,38 +1,72 @@
-.App {
-  text-align: center;
+.page_container {
+  width: 100%;
+  background: rgb(233, 233, 233);
+  /* background: radial-gradient(
+    ellipse at center,
+    rgb(255, 255, 245) 0%,
+    rgb(248, 247, 234) 35%,
+    #dfdff1 100%
+  );
+  overflow: hidden; */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.font1 {
+  font-size: 3rem;
+  color: #363685;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.font2 {
+  font-size: 2.4rem;
+  color: #363685;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.font3 {
+  font-size: 2rem;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.font4 {
+  font-size: 1rem;
+  color: grey;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.ocean { 
+  height: 30%;
+  width:100%;
+  position:absolute;
+  bottom:0;
+  left:0;
+  background: #015871;
+}
+
+.wave {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg) repeat-x; 
+  position: absolute;
+  top: -198px;
+  width: 6400px;
+  height: 198px;
+  animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
+  transform: translate3d(0, 0, 0);
+}
+
+.wave:nth-of-type(2) {
+  top: -175px;
+  animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite;
+  opacity: 1;
+}
+
+@keyframes wave {
+  0% {
+    margin-left: 0;
   }
-  to {
-    transform: rotate(360deg);
+  100% {
+    margin-left: -1600px;
   }
 }
+
+@keyframes swell {
+  0%, 100% {
+    transform: translate3d(0,-25px,0);
+  }
+  50% {
+    transform: translate3d(0,5px,0);
+  }
+}
+
