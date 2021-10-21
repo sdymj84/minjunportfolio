@@ -1,0 +1,30 @@
+@import "./variable";
+
+.page_container {
+  width: 100%;
+  background: rgb(233, 233, 233);
+  font-family: Catamaran;
+  line-height: 1.1;
+  z-index: -1;
+}
+
+.font1 {
+  font-size: 5rem;
+  font-weight: bold;
+  color: $blue;
+}
+.font2 {
+  font-size: 4rem;
+  font-weight: bold;
+  color: $blue;
+}
+.font3 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+}
+.font4 {
+  font-size: 2rem;
+  color: $grey;
+}
+

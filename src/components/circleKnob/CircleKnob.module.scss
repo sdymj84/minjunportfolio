@@ -1,0 +1,49 @@
+@import "../../variable";
+
+.circle_knob {
+  width: 150px;
+  height: 150px;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 10px 10px $grey;
+  cursor: pointer;
+
+  &.active {
+    transform: rotate(90deg);
+    box-shadow: 10px -10px $yellow;
+
+    .lever {
+      background: $yellow;
+      transition: all 0.4s ease-in-out;
+    }
+  }
+  transition: all 0.4s ease-in-out;
+
+  .lever {
+    width: 30px;
+    height: 10px;
+    background: $blue;
+    border-radius: 5px;
+    position: relative;
+    top: calc(50% - 5px);
+    left: -2px;
+    transition: all 0.4s ease-in-out;
+  }
+}
+
+.graduation_off,
+.graduation_on {
+  width: 22px;
+  height: 2px;
+  background: white;
+  position: relative;
+}
+.graduation_off {
+  top: 78px;
+  left: -30px;
+}
+.graduation_on {
+  left: 64px;
+  transform: rotate(90deg);
+  top: -20px;
+}

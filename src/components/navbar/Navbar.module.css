@@ -1,13 +1,13 @@
 .container {
   width: 70%;
   height: 50px;
-  background: white;
   padding: 0 15%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: fixed;
-  z-index: 1;
+  background: white;
+  z-index: 2;
 }
 
 .menu {

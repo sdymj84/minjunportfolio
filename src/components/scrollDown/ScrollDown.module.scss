@@ -1,0 +1,40 @@
+@import "../../variable";
+
+.scroll_button {
+  margin: auto;
+  width: 70px;
+  height: 70px;
+  color: $yellow;
+  border-radius: 50%;
+  background-color: $blue;
+  position: relative;
+  animation: animate 2s ease-in-out infinite ;
+  cursor: pointer;
+  z-index: 1;
+  
+  .arrow, .arrow2 {
+    width: 20px;
+    height: 20px;
+    margin: auto;
+    position: relative;
+    top: 25px;
+    border-right: 5px solid $yellow;
+    border-bottom: 5px solid $yellow;
+    transform: rotate(45deg);
+  }
+  .arrow2 {
+    top: -15px;
+  }
+}
+
+@keyframes animate {
+  0% {
+    top: -10px;
+  }
+  50% {
+    top: 10px;
+  }
+  100% {
+    top: -10px;
+  }
+}
