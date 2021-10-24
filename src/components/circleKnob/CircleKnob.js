@@ -1,15 +1,16 @@
 import React from "react";
 import styles from "./CircleKnob.module.scss";
 
-const CircleKnob = () => {
-  const [enabled, setEnabled] = React.useState(false);
+const CircleKnob = (props) => {
+  const { id, isEnabled, handleClick } = props;
+
   return (
-    <div>
+    <div className={styles.container}>
       <div className={styles.graduation_off} />
       <div className={styles.graduation_on} />
       <div
-        className={`${styles.circle_knob} ${enabled && styles.active}`}
-        onClick={() => setEnabled((prev) => !prev)}
+        className={`${styles.circle_knob} ${isEnabled && styles.active}`}
+        onClick={() => handleClick(id)}
       >
         <div className={styles.lever}></div>
       </div>

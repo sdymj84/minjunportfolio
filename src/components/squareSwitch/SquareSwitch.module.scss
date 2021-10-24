@@ -1,0 +1,25 @@
+@import "../../variable";
+
+.container {
+  padding: 20px;
+}
+
+.square_switch {
+  width: 100px;
+  height: 100px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 10px 10px $grey;
+  cursor: pointer;
+
+  &:active {
+    position: relative;
+    top: 5px;
+    left: 5px;
+    box-shadow: 5px 5px $grey;
+  }
+
+  &.active {
+    box-shadow: 10px 10px $yellow;
+  }
+}

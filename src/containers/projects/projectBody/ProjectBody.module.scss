@@ -4,4 +4,14 @@
   background: $blue;
   height: 1000px;
   padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  
+  @include respond-to(">large") {
+    flex-direction: row;  
+    justify-content: center;
+    align-items: flex-start;
+  }
 }

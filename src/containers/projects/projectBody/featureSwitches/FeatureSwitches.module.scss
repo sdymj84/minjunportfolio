@@ -1,0 +1,30 @@
+@import "../../../../variable";
+
+.container {
+  max-width: 430px;
+  width: 100%;
+  margin: 0 10px;
+}
+
+.title {
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid $yellow;
+  color: $yellow;
+  font-size: 1.5rem;
+}
+
+.switches {
+  display: flex;
+  align-items: center;
+  padding: 30px;
+  overflow-x: scroll;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  @include respond-to(">small") {
+    justify-content: space-evenly;
+    overflow-x: hidden;
+  }
+}
