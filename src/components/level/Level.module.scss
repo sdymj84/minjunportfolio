@@ -1,0 +1,85 @@
+@import "../../variable";
+
+:export {
+  yellow: $yellow;
+}
+
+.level {
+  width: 20px;
+  height: 160px;
+  background: white;
+  border-radius: 10px;  
+
+  @for $i from 1 to 7 {
+    :nth-child(#{$i}) {
+      width: 12px;
+      height: 1px;
+      background: white;
+      position: relative;
+      top: #{($i * 26) - 17}px;
+      left: 20px;
+    } 
+  }  
+
+  .measure {
+    width: 60px;
+    height: 23px;
+    position: relative;
+    left: -20px;
+    top: var(--top);
+    box-shadow: 5px 5px $blue;
+    background: $yellow;
+    transition: all ease 0.5s;
+    z-index: 1;
+    animation: measure_up ease .5s;
+  }
+  .color_gauge {
+    width: 20px;
+    height: calc(137px - var(--top));
+    background: $yellow;
+    border-radius: 10px;  
+    position: relative;
+    top: calc(var(--top) - 6px);
+    transition: all ease 0.5s;
+    animation: color_gauge_up ease .5s;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 15px;
+
+  .title {
+    font-size: 1.2rem;
+    position: absolute;
+    bottom: 15px;
+    color: white;
+    font-family: $font-family2;
+  }
+
+  @include respond-to(">large") {
+
+  }
+}
+
+
+@keyframes measure_up {
+  from {
+    top: 120px;
+  }
+  to {
+    top: var(--top);
+  }
+}
+@keyframes color_gauge_up {
+  from {
+    top: 114px;
+    height: 17px;
+  }
+  to {
+    top: calc(var(--top) - 6px);
+    height: calc(137px - var(--top));
+  }
+}

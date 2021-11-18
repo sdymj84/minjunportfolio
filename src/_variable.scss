@@ -12,6 +12,11 @@ $breakpoints: (
   '<large':  ( max-width: 1200px ),
 ) !default;
 
+// gulim
+$font-family1: Arial;
+// gungseo
+$font-family2: Arial;
+
 @mixin respond-to($breakpoint) {
   // If the key exists in the map
   @if map-has-key($breakpoints, $breakpoint) {

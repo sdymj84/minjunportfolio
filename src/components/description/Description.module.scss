@@ -1,0 +1,28 @@
+@import "../../variable";
+
+.container {
+  width: 100%;
+  padding: 1rem;
+  padding-top: 0;
+  border-left: 2px solid $yellow;
+  font-family: $font-family2;
+
+  .title {
+    color: $yellow;
+    font-size: 1.2rem;
+  }
+
+  .timeframe {
+    color: $grey;
+    font-size: 0.9rem;
+  }
+
+  .bulletpoints {
+    color: white;
+    padding-left: 1rem;
+    margin-top: 2rem;
+    li {
+      margin-bottom: 1rem;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+.content {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  max-width: 1100px;
+  margin-top: 1rem;
+}
+
+.visible {
+  transform: scaleY(1);
+  transition: all ease 0.3s;
+}
+.hidden {
+  transform: scaleY(0);
+  transition: all ease 0.3s;
+}

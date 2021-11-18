@@ -1,0 +1,24 @@
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  margin-top: 2rem;
+  width: 70%;
+  max-width: 1000px;
+  height: 240px;
+  background: #446683;
+  border-radius: 30px;
+}
+
+.visible {
+  opacity: 1;
+  transform: scale(1);
+  transition: all 0.3s ease 0.2s;
+}
+.hidden {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: all 0.3s ease 0.2s;
+}
+

@@ -3,15 +3,24 @@
 .container {
   background: $blue;
   height: 1000px;
-  padding: 10px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
-  
-  @include respond-to(">large") {
-    flex-direction: row;  
-    justify-content: center;
-    align-items: flex-start;
+  width: 100%;
+
+  .switches {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    
+    @include respond-to(">large") {
+      flex-direction: row;  
+      justify-content: center;
+      align-items: flex-start;
+    }
   }
 }

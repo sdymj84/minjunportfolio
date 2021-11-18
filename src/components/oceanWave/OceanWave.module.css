@@ -1,8 +1,6 @@
 .ocean { 
-  height: 20%;
   width:100%;
   position:absolute;
-  bottom:-100px;
   left:0;
   background: rgb(56,86,118);
 }
